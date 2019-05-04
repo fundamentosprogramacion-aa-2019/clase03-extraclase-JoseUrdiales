@@ -28,7 +28,7 @@ public class Deber1 {
     int mensaje = entrada.nextInt();
     
     if (mensaje <= 40){
-        tarifatotal = 3;
+        tarifatotal = 0;
     }else{
         if ((mensaje > 40) && (mensaje <= 200)){
             do{
