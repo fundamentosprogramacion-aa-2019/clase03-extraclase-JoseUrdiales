@@ -21,7 +21,7 @@ public class Deber1 {
     
     int tarifa = 3;
     int i = 40;
-    int tarifatotal = 0;
+    double tarifatotal = 0;
     double iva;
     
     System.out.println("¿Cuantos mensajes envio este mes?");
@@ -32,18 +32,18 @@ public class Deber1 {
     }else{
         if ((mensaje > 40) && (mensaje <= 200)){
             do{
-                tarifatotal = tarifatotal+5;
+                tarifatotal = tarifatotal+0.05;
                 i+=1;
             }while(i < mensaje);
         }else{
             if (mensaje>200){
                 do{
-                tarifatotal = tarifatotal+5;
+                tarifatotal = tarifatotal+0.05;
                 i+=1;
                 }while(i < 200);
                 
                 do{
-                tarifatotal = tarifatotal+10;
+                tarifatotal = tarifatotal+0.10;
                 i+=1;
                 }while(i < mensaje);
             }
